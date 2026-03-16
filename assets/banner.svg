@@ -1,0 +1,221 @@
+<svg width="900" height="335" viewBox="0 0 900 335" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes blink  { 0%,49%{ opacity:1 } 50%,100%{ opacity:0 } }
+
+    .l0  { opacity:0; animation: fadeIn .05s forwards  .3s; }
+    .l1  { opacity:0; animation: fadeIn .05s forwards  .7s; }
+    .l2  { opacity:0; animation: fadeIn .05s forwards 1.0s; }
+    .l3  { opacity:0; animation: fadeIn .05s forwards 1.3s; }
+    .l4  { opacity:0; animation: fadeIn .05s forwards 1.6s; }
+    .l5  { opacity:0; animation: fadeIn .05s forwards 1.9s; }
+    .l6  { opacity:0; animation: fadeIn .05s forwards 2.2s; }
+    .l7  { opacity:0; animation: fadeIn .05s forwards 2.5s; }
+    .l8  { opacity:0; animation: fadeIn .05s forwards 2.8s; }
+    .l9  { opacity:0; animation: fadeIn .05s forwards 3.1s; }
+    .l10 { opacity:0; animation: fadeIn .05s forwards 3.4s; }
+    .l11 { opacity:0; animation: fadeIn .05s forwards 3.7s; }
+    .l12 { opacity:0; animation: fadeIn .05s forwards 4.0s; }
+    .l13 { opacity:0; animation: fadeIn .05s forwards 4.3s; }
+    .l14 { opacity:0; animation: fadeIn .05s forwards 4.6s; }
+
+    .cursor { animation: blink 1s step-end infinite; }
+  </style>
+
+  <!-- Animated vertical gradient across the full ASCII art block (y 78→168) -->
+  <linearGradient id="asciiGrad" x1="0" y1="78" x2="0" y2="168" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#cae8ff">
+      <animate attributeName="stop-color"
+        values="#cae8ff;#79c0ff;#388bfd;#79c0ff;#cae8ff"
+        dur="5s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#1f6feb">
+      <animate attributeName="stop-color"
+        values="#1f6feb;#388bfd;#79c0ff;#388bfd;#1f6feb"
+        dur="5s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+</defs>
+
+<!-- ░░ WINDOW CHROME ░░ -->
+<rect width="900" height="335" rx="10" fill="#0d1117"/>
+<rect x=".5" y=".5" width="899" height="334" rx="10" fill="none" stroke="#30363d" stroke-width="1"/>
+<rect width="900" height="38" rx="10" fill="#161b22"/>
+<rect y="28"  width="900" height="10" fill="#161b22"/>
+<line x1="0" y1="38" x2="900" y2="38" stroke="#30363d" stroke-width="1"/>
+
+<!-- Traffic lights -->
+<circle cx="18" cy="19" r="6" fill="#ff5f57"/>
+<circle cx="38" cy="19" r="6" fill="#febc2e"/>
+<circle cx="58" cy="19" r="6" fill="#28c840"/>
+<text x="14.5" y="22" font-family="sans-serif" font-size="7" fill="#820005">✕</text>
+<text x="34.5" y="22" font-family="sans-serif" font-size="9" fill="#9a5700" dy="-1">−</text>
+<text x="54.5" y="22" font-family="sans-serif" font-size="8" fill="#006500">+</text>
+
+<!-- Title bar label -->
+<text x="450" y="23" text-anchor="middle"
+      font-family="'Courier New', Courier, monospace" font-size="11" fill="#8b949e">
+  ahmed@cairo-dev — neofetch — 120×30
+</text>
+
+<!-- ░░ TERMINAL CONTENT ░░ -->
+
+<!-- L0 · Prompt + command -->
+<g class="l0">
+  <text y="62" font-family="'Courier New', Courier, monospace" font-size="13">
+    <tspan x="20"  fill="#3fb950">ahmed</tspan
+    ><tspan        fill="#8b949e">@</tspan
+    ><tspan        fill="#58a6ff">cairo-dev</tspan
+    ><tspan        fill="#8b949e">:~$ </tspan
+    ><tspan        fill="#e6edf3">neofetch</tspan>
+  </text>
+</g>
+
+<!-- L1 · ASCII row 1  +  user@host -->
+<g class="l1">
+  <text x="15" y="82"
+        font-family="'Courier New', Courier, monospace" font-size="10"
+        fill="url(#asciiGrad)"> █████╗ ██╗  ██╗███╗   ███╗███████╗██████╗ </text>
+  <text y="82" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="bold">
+    <tspan x="318" fill="#3fb950">ahmed</tspan
+    ><tspan        fill="#8b949e">@</tspan
+    ><tspan        fill="#58a6ff">cairo-dev</tspan>
+  </text>
+</g>
+
+<!-- L2 · ASCII row 2  +  separator -->
+<g class="l2">
+  <text x="15" y="98"
+        font-family="'Courier New', Courier, monospace" font-size="10"
+        fill="url(#asciiGrad)">██╔══██╗██║  ██║████╗ ████║██╔════╝██╔══██╗</text>
+  <text x="318" y="98"
+        font-family="'Courier New', Courier, monospace" font-size="12" fill="#484f58">─────────────────────</text>
+</g>
+
+<!-- L3 · ASCII row 3  +  OS -->
+<g class="l3">
+  <text x="15" y="114"
+        font-family="'Courier New', Courier, monospace" font-size="10"
+        fill="url(#asciiGrad)">███████║███████║██╔████╔██║█████╗  ██║  ██║</text>
+  <text y="114" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">OS</tspan
+    ><tspan        fill="#e6edf3">: Front-End Engineer</tspan>
+  </text>
+</g>
+
+<!-- L4 · ASCII row 4  +  Host -->
+<g class="l4">
+  <text x="15" y="130"
+        font-family="'Courier New', Courier, monospace" font-size="10"
+        fill="url(#asciiGrad)">██╔══██║██╔══██║██║╚██╔╝██║██╔══╝  ██║  ██║</text>
+  <text y="130" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">Host</tspan
+    ><tspan        fill="#e6edf3">: Cairo, Egypt</tspan>
+  </text>
+</g>
+
+<!-- L5 · ASCII row 5  +  Uptime -->
+<g class="l5">
+  <text x="15" y="146"
+        font-family="'Courier New', Courier, monospace" font-size="10"
+        fill="url(#asciiGrad)">██║  ██║██║  ██║██║ ╚═╝ ██║███████╗██████╔╝</text>
+  <text y="146" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">Uptime</tspan
+    ><tspan        fill="#e6edf3">: 1+ year of production projects</tspan>
+  </text>
+</g>
+
+<!-- L6 · ASCII row 6  +  Shell -->
+<g class="l6">
+  <text x="15" y="162"
+        font-family="'Courier New', Courier, monospace" font-size="10"
+        fill="url(#asciiGrad)">╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═╝╚══════╝╚═════╝ </text>
+  <text y="162" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">Shell</tspan
+    ><tspan        fill="#e6edf3">: JavaScript / TypeScript / Go</tspan>
+  </text>
+</g>
+
+<!-- L7 · Packages -->
+<g class="l7">
+  <text y="178" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">Packages</tspan
+    ><tspan        fill="#e6edf3">: React · Vue · Next.js · HTMX · Alpine.js</tspan>
+  </text>
+</g>
+
+<!-- L8 · Styling -->
+<g class="l8">
+  <text y="194" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">Styling</tspan
+    ><tspan        fill="#e6edf3">: Tailwind CSS · Chart.js · Figma</tspan>
+  </text>
+</g>
+
+<!-- L9 · DevOps -->
+<g class="l9">
+  <text y="210" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">DevOps</tspan
+    ><tspan        fill="#e6edf3">: Docker · Git · Caprover</tspan>
+  </text>
+</g>
+
+<!-- L10 · Database -->
+<g class="l10">
+  <text y="226" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">Database</tspan
+    ><tspan        fill="#e6edf3">: MySQL · MongoDB</tspan>
+  </text>
+</g>
+
+<!-- L11 · Languages -->
+<g class="l11">
+  <text y="242" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">Languages</tspan
+    ><tspan        fill="#e6edf3">: Arabic (native) · English · Italian</tspan>
+  </text>
+</g>
+
+<!-- L12 · Education -->
+<g class="l12">
+  <text y="258" font-family="'Courier New', Courier, monospace" font-size="12">
+    <tspan x="318" fill="#58a6ff" font-weight="bold">Education</tspan
+    ><tspan        fill="#e6edf3">: ALX x Holberton + Ain Shams Uni</tspan>
+  </text>
+</g>
+
+<!-- L13 · Color palette (2 rows of 8 swatches) -->
+<g class="l13">
+  <rect x="318" y="268" width="16" height="12" rx="2" fill="#0d1117"/>
+  <rect x="337" y="268" width="16" height="12" rx="2" fill="#1f6feb"/>
+  <rect x="356" y="268" width="16" height="12" rx="2" fill="#388bfd"/>
+  <rect x="375" y="268" width="16" height="12" rx="2" fill="#58a6ff"/>
+  <rect x="394" y="268" width="16" height="12" rx="2" fill="#3fb950"/>
+  <rect x="413" y="268" width="16" height="12" rx="2" fill="#56d364"/>
+  <rect x="432" y="268" width="16" height="12" rx="2" fill="#ff7b72"/>
+  <rect x="451" y="268" width="16" height="12" rx="2" fill="#ffa657"/>
+
+  <rect x="318" y="283" width="16" height="12" rx="2" fill="#161b22"/>
+  <rect x="337" y="283" width="16" height="12" rx="2" fill="#2d7dd2"/>
+  <rect x="356" y="283" width="16" height="12" rx="2" fill="#58a6ff"/>
+  <rect x="375" y="283" width="16" height="12" rx="2" fill="#79c0ff"/>
+  <rect x="394" y="283" width="16" height="12" rx="2" fill="#56d364"/>
+  <rect x="413" y="283" width="16" height="12" rx="2" fill="#7ee787"/>
+  <rect x="432" y="283" width="16" height="12" rx="2" fill="#ffa198"/>
+  <rect x="451" y="283" width="16" height="12" rx="2" fill="#ffb870"/>
+</g>
+
+<!-- L14 · Final prompt + blinking cursor -->
+<g class="l14">
+  <text y="318" font-family="'Courier New', Courier, monospace" font-size="13">
+    <tspan x="20"  fill="#3fb950">ahmed</tspan
+    ><tspan        fill="#8b949e">@</tspan
+    ><tspan        fill="#58a6ff">cairo-dev</tspan
+    ><tspan        fill="#8b949e">:~$ </tspan>
+  </text>
+  <!-- cursor: "ahmed@cairo-dev:~$ " ≈ 148px from x=20 → x≈170 -->
+  <rect x="170" y="304" width="8" height="16" fill="#e6edf3" class="cursor"/>
+</g>
+
+</svg>
