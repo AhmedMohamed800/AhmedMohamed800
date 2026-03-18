@@ -93,12 +93,12 @@
 ### [API Empire](https://github.com/AhmedMohamed800/API-Empire)
 > A subscription-based API marketplace for developers — think RapidAPI, built from scratch.
 
-- **Stack:** React.js · Django (Python) · MySQL
+- **Stack:** React.js · Flask (Python) · MySQL
 - **Features:** PayPal subscription integration · API key management · Developer dashboard
 
 ```
  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
- │   React.js   │────▶│    Django    │────▶│    MySQL     │
+ │   React.js   │────▶│    Flask    │────▶│    MySQL     │
  │   Frontend   │     │   REST API   │     │   Database   │
  └──────────────┘     └──────────────┘     └──────────────┘
          │                                        │
