@@ -70,23 +70,6 @@
 
 ---
 
-## 💼 Experience
-
-| Period | Role | Company | Location |
-|--------|------|---------|----------|
-| `10/2024 – 01/2025` | 🖥️ Front-End Developer *(Freelance)* | **Ultra Academy** | Iraq 🇮🇶 |
-| `08/2024 – 09/2025` | 🦷 Front-End Developer *(Freelance)* | **Dentalist** | UAE 🇦🇪 |
-| `07/2024 – 03/2025` | 🔧 Full Stack Developer *(Part-time)* | **AMACO Consulting** | Cairo 🇪🇬 |
-| `03/2024 – 05/2024` | 📊 Front-End Developer *(Freelance)* | **Sky Limit** | USA 🇺🇸 |
-
-### 🔍 Highlights
-
-- 🏗️ Built a **custom CMS** with Go (Echo) + Vue.js + HTMX + MySQL, deployed via Docker & Caprover
-- 📚 Developed an **LMS platform** with Next.js + React, integrated with a Django back-end
-- 🦷 Designed & built the **Dentalist** e-commerce platform (dental B2B) using Vue.js + Figma
-- 📞 Integrated **VoIP (Voximplant SDK)** and **crypto payments (BitPay)** into a CRM frontend
-
----
 
 ## 🚀 Featured Project
 
@@ -103,26 +86,6 @@
  └──────────────┘     └──────────────┘     └──────────────┘
          │                                        │
          └──────────── PayPal Subscriptions ──────┘
-```
-
----
-
-## 🎓 Education & Certifications
-
-- 🎓 **B.A. Italian Language & Literature** — Ain Shams University *(2020 – 2024)*
-- 💻 **Software Engineering Program** — ALX Africa × Holberton School *(2023 – 2024)*
-- 🌍 **Training of Trainers (TOT)** — Sustainable Development Ambassador
-
----
-
-## 🌟 Strengths
-
-```
-💬 Communication     ──────────────────── Excellent
-🤝 Collaboration     ──────────────────── Team-first mindset
-🔍 Attention to Detail ──────────────── Pixel-perfect delivery
-🧩 Problem Solving   ──────────────────── Analytical & creative
-🌐 Cultural Awareness ─────────────────── 3 languages spoken
 ```
 
 ---
